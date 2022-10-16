@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>IFrame form</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/embedded-form-2.css?v=1" rel="stylesheet">
+</head>
+
+<body>
+
+
+<!-- Masthead -->
+<div class="container">
+    <div class="alert alert-success" role="alert" id="message">
+        Thank you for your submission. Someone will contact you shortly.
+    </div>
+    <form class="form form-vertical" method="post" id="carbot_main_form">
+        <input type="hidden" name="slug" id="slug" value="ffl">
+        <div class="row">
+            <div class="col-md-12 col-12" style="padding-bottom: 10px;">
+                <div class="form-check">
+                    <input class="form-check-input trip_type_option" type="radio" name="serviceType" value="Transfer" checked="checked">
+                    <label class="form-check-label">
+                        Transfer
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input trip_type_option" type="radio" name="serviceType" value="Hourly">
+                    <label class="form-check-label">
+                        Hourly
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-12">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" id="first-name-column" class="form-control" placeholder="First Name"
+                           name="firstName" value="" required>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last Name" id="lastName" name="lastName"
+                           value="" required>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Email" id="email" name="email" value="" required>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="text" class="form-control" placeholder="(123) 555-1123" id="phone" name="phone" value="">
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="form-group">
+                    <label>Occasion</label>
+                    <fieldset class="form-group">
+                        <select class="form-control" id="occasion" name="occasion">
+                            <option value="Personal" selected="selected">Personal</option>
+                            <option value="Wedding">Wedding</option>
+                            <option value="Group">Group</option>
+                            <option value="Business">Business</option>
+                        </select>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" id="country-floating" class="datepicker form-control" placeholder="yyyy-dd-mm"
+                           min="2022-10-01" max="2082-10-01" name="dateOfService" value="" required>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="form-group">
+                    <label>Time</label>
+                    <fieldset class="form-group">
+                        <select class="form-select form-control" id="pickupTime" name="pickupTime" required>
+                            <option value="00:00:00">12:00 AM</option>
+                            <option value="00:00:00">12:00 AM</option>
+                            <option value="00:15:00">12:15 AM</option>
+                            <option value="00:30:00">12:30 AM</option>
+                            <option value="00:45:00">12:45 AM</option>
+                            <option value="01:00:00">1:00 AM</option>
+                            <option value="01:15:00">1:15 AM</option>
+                            <option value="01:30:00">1:30 AM</option>
+                            <option value="01:45:00">1:45 AM</option>
+                            <option value="02:00:00">2:00 AM</option>
+                            <option value="02:15:00">2:15 AM</option>
+                            <option value="02:30:00">2:30 AM</option>
+                            <option value="02:45:00">2:45 AM</option>
+                            <option value="03:00:00">3:00 AM</option>
+                            <option value="03:15:00">3:15 AM</option>
+                            <option value="03:30:00">3:30 AM</option>
+                            <option value="03:45:00">3:45 AM</option>
+                            <option value="04:00:00">4:00 AM</option>
+                            <option value="04:15:00">4:15 AM</option>
+                            <option value="04:30:00">4:30 AM</option>
+                            <option value="04:45:00">4:45 AM</option>
+                            <option value="05:00:00">5:00 AM</option>
+                            <option value="05:15:00">5:15 AM</option>
+                            <option value="05:30:00">5:30 AM</option>
+                            <option value="05:45:00">5:45 AM</option>
+                            <option value="06:00:00">6:00 AM</option>
+                            <option value="06:15:00">6:15 AM</option>
+                            <option value="06:30:00">6:30 AM</option>
+                            <option value="06:45:00">6:45 AM</option>
+                            <option value="07:00:00">7:00 AM</option>
+                            <option value="07:15:00">7:15 AM</option>
+                            <option value="07:30:00">7:30 AM</option>
+                            <option value="07:45:00">7:45 AM</option>
+                            <option value="08:00:00">8:00 AM</option>
+                            <option value="08:15:00">8:15 AM</option>
+                            <option value="08:30:00">8:30 AM</option>
+                            <option value="08:45:00">8:45 AM</option>
+                            <option value="09:00:00">9:00 AM</option>
+                            <option value="09:15:00">9:15 AM</option>
+                            <option value="09:30:00">9:30 AM</option>
+                            <option value="09:45:00">9:45 AM</option>
+                            <option value="10:00:00">10:00 AM</option>
+                            <option value="10:15:00">10:15 AM</option>
+                            <option value="10:30:00">10:30 AM</option>
+                            <option value="10:45:00">10:45 AM</option>
+                            <option value="11:00:00">11:00 AM</option>
+                            <option value="11:15:00">11:15 AM</option>
+                            <option value="11:30:00">11:30 AM</option>
+                            <option value="11:45:00">11:45 AM</option>
+                            <option value="12:00:00">12:00 PM</option>
+                            <option value="12:15:00">12:15 PM</option>
+                            <option value="12:30:00">12:30 PM</option>
+                            <option value="12:45:00">12:45 PM</option>
+                            <option value="13:00:00">1:00 PM</option>
+                            <option value="13:15:00">1:15 PM</option>
+                            <option value="13:30:00">1:30 PM</option>
+                            <option value="13:45:00">1:45 PM</option>
+                            <option value="14:00:00">2:00 PM</option>
+                            <option value="14:15:00">2:15 PM</option>
+                            <option value="14:30:00">2:30 PM</option>
+                            <option value="14:45:00">2:45 PM</option>
+                            <option value="15:00:00">3:00 PM</option>
+                            <option value="15:15:00">3:15 PM</option>
+                            <option value="15:30:00">3:30 PM</option>
+                            <option value="15:45:00">3:45 PM</option>
+                            <option value="16:00:00">4:00 PM</option>
+                            <option value="16:15:00">4:15 PM</option>
+                            <option value="16:30:00">4:30 PM</option>
+                            <option value="16:45:00">4:45 PM</option>
+                            <option value="17:00:00">5:00 PM</option>
+                            <option value="17:15:00">5:15 PM</option>
+                            <option value="17:30:00">5:30 PM</option>
+                            <option value="17:45:00">5:45 PM</option>
+                            <option value="18:00:00">6:00 PM</option>
+                            <option value="18:15:00">6:15 PM</option>
+                            <option value="18:30:00">6:30 PM</option>
+                            <option value="18:45:00">6:45 PM</option>
+                            <option value="19:00:00">7:00 PM</option>
+                            <option value="19:15:00">7:15 PM</option>
+                            <option value="19:30:00">7:30 PM</option>
+                            <option value="19:45:00">7:45 PM</option>
+                            <option value="20:00:00">8:00 PM</option>
+                            <option value="20:15:00">8:15 PM</option>
+                            <option value="20:30:00">8:30 PM</option>
+                            <option value="20:45:00">8:45 PM</option>
+                            <option value="21:00:00">9:00 PM</option>
+                            <option value="21:15:00">9:15 PM</option>
+                            <option value="21:30:00">9:30 PM</option>
+                            <option value="21:45:00">9:45 PM</option>
+                            <option value="22:00:00">10:00 PM</option>
+                            <option value="22:15:00">10:15 PM</option>
+                            <option value="22:30:00">10:30 PM</option>
+                            <option value="22:45:00">10:45 PM</option>
+                            <option value="23:00:00">11:00 PM</option>
+                            <option value="23:15:00">11:15 PM</option>
+                            <option value="23:30:00">11:30 PM</option>
+                            <option value="23:45:00">11:45 PM</option>
+                        </select>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="form-group">
+                    <label>Passengers</label>
+                    <fieldset class="form-group">
+                        <select class="form-control" id="paxNumber" name="paxNumber">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                            <option value="48">48</option>
+                            <option value="49">49</option>
+                            <option value="50">50</option>
+                            <option value="51">51</option>
+                            <option value="52">52</option>
+                            <option value="53">53</option>
+                            <option value="54">54</option>
+                            <option value="55">55</option>
+                        </select>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 transfer-type-wrapper">
+                <div class="form-group">
+                    <label>Pickup location</label>
+                    <input type="text" class=" autocomplete form-control" placeholder="Pickup address" id="pickUpLocation"
+                           name="pickUpLocation" value="">
+                </div>
+            </div>
+            <div class="col-md-6 col-12 transfer-type-wrapper">
+                <div class="form-group">
+                    <label>Drop-off location</label>
+                    <input type="text" class="autocomplete form-control" placeholder="Drop-off address" id="dropOffLocation"
+                           name="dropOffLocation" value="">
+                </div>
+            </div>
+            <div class="col-md-12 col-12 transfer-type-wrapper" style="display: none">
+                <div class="form-group">
+                    <label>Pickup location</label>
+                    <input type="text" class=" autocomplete form-control" placeholder="Pickup address" id="pickUpLocationHourly"
+                           name="pickUpLocationHourly" value="">
+                </div>
+            </div>
+
+            <div class="col-md-12 col-12">
+                <div class="form-group">
+                    <label>Additional Note</label>
+                    <textarea class="form-control" id="note" name="note" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="col-12 d-flex justify-content-end">
+                <button id="submit" type="button" class="btn btn-primary btn-lg btn-block" style="background-color: #C60303">Send</button>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- Bootstrap core JavaScript -->
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootstrap/js/moment.min.js"></script>
+
+<script src="js/autocomplete.js"></script>
+</body>
+
+</html>

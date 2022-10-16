@@ -1,0 +1,24 @@
+#col_trip_type .active {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#col_trip_type .inactive {
+    text-decoration: underline;
+    color: #0077CC;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#col_trip_type {
+    padding-bottom: 10px;
+}
+
+.hourly-type{
+    display: none;
+}
+
+#message{
+    display: none;
+}
