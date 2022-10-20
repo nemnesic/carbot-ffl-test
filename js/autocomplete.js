@@ -11,7 +11,7 @@ $(document).ready(function () {
     $("#submit").on('click', function () {
         console.log("click");
         $.ajax({
-            url: 'https://58e3-178-149-80-194.ngrok.io/webhook/v3/web-lead/save', // url where to submit the request
+            url: 'https://account.carservicebot.com/webhook/v3/web-lead/save', // url where to submit the request
             type: "POST", // type of action POST || GET
             dataType: 'json', // data type
             data: $("#carbot_main_form").serialize(), // post data || get data
