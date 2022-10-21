@@ -2,10 +2,7 @@ $(document).ready(function () {
     //$('#pickupTime').datetimepicker({format: 'LT'});
     //$('.datepicker').datetimepicker({format: 'MM/DD/YYYY'});
 
-    $(".trip_type_option").click(function () {
-        $(".transfer-type-wrapper").toggle('slow', function () {
-        });
-    });
+
 
 
     $("#submit").on('click', function () {

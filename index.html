@@ -254,25 +254,25 @@
                     </fieldset>
                 </div>
             </div>
-            <div class="col-md-6 col-12 transfer-type-wrapper">
+            <div class="col-md-6 col-12">
                 <div class="form-group">
                     <label>Pickup location</label>
                     <input type="text" class=" autocomplete form-control" placeholder="Pickup address" id="pickUpLocation"
-                           name="pickUpLocation" value="">
+                           name="pickUpLocation" value="" required>
                 </div>
             </div>
-            <div class="col-md-6 col-12 transfer-type-wrapper">
+            <div class="col-md-6 col-12">
                 <div class="form-group">
-                    <label>Drop-off location</label>
+                    <label>Final destination</label>
                     <input type="text" class="autocomplete form-control" placeholder="Drop-off address" id="dropOffLocation"
-                           name="dropOffLocation" value="">
+                           name="dropOffLocation" value="" required>
                 </div>
             </div>
-            <div class="col-md-12 col-12 transfer-type-wrapper" style="display: none">
+
+            <div class="col-md-12 col-12">
                 <div class="form-group">
-                    <label>Pickup location</label>
-                    <input type="text" class=" autocomplete form-control" placeholder="Pickup address" id="pickUpLocationHourly"
-                           name="pickUpLocationHourly" value="">
+                    <label>Stops <small>(Let us know if you want to make any stops)</small></label>
+                    <textarea class="form-control" id="stops" name="stops" rows="2"></textarea>
                 </div>
             </div>
 
