@@ -22,3 +22,54 @@
 #message{
     display: none;
 }
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #8C9499;
+    border-width: 0px 0px 1px 0px;
+    border-radius: 0px 0px 0px 0px;
+    color: #0A2340;
+    min-height: 40px;
+    font-family: "Montserrat", Sans-serif;
+}
+
+.form-control:focus {
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+    outline: 0;
+}
+
+.col-12 {
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #C60303;
+    width: auto;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px 60px 15px 60px;
+    line-height: 1;
+    border: 0px;
+}
+
+.btn:hover {
+    background-color: #0B2836;
+    color: #FFFFFF;
+}
+
+label {
+    display: inline-block;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 500!important;
+    text-transform: capitalize;
+    color: #0B1F33;
+    margin: 0 0 0.5em 0;
+}
+
+input::placeholder {
+    display: none; (font-size: 0;)
+}
